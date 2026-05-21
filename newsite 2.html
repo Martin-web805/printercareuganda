@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Printercare Uganda | Expert Printer Repair & Services Nationwide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #f8f9fa;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header & Navigation */
+        .navbar {
+            background: #0a0a0a;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-bottom: 3px solid #f97316;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            background: #f97316;
+            color: #0a0a0a;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            position: relative;
+        }
+
+        .logo-icon .fa-print {
+            color: white;
+        }
+
+        .logo-icon .fa-wrench {
+            position: absolute;
+            bottom: -4px;
+            right: -8px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #0a0a0a;
+        }
+
+        .logo-text {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+
+        .logo-text .blue {
+            color: #3b82f6;
+        }
+
+        .logo-text .orange {
+            color: #f97316;
+        }
+
+        .logo-text small {
+            display: block;
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: #94a3b8;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #f97316;
+        }
+
+        .btn {
+            padding: 0.7rem 1.6rem;
+            border-radius: 2.5rem;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: #f97316;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: #ea580c;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-light {
+            background: transparent;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+        }
+
+        .btn-outline-light:hover {
+            background: #ffffff;
+            color: #0f172a;
+        }
+
+        /* Hero Section - Strong Repair Focus */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 4rem 0 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -40%;
+            right: -15%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(249,115,22,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .hero-text {
+            flex: 1 1 500px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+        }
+
+        .hero h1 .blue {
+            color: #3b82f6;
+        }
+        .hero h1 .orange {
+            color: #f97316;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-visual {
+            flex: 1 1 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .repair-badge {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(8px);
+            padding: 2rem;
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .repair-badge .fa-print {
+            font-size: 4rem;
+            color: #f97316;
+            margin-bottom: 0.5rem;
+        }
+
+        .repair-badge .fa-wrench {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: #3b82f6;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 3rem 0 1.5rem;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title i {
+            color: #f97316;
+        }
+
+        .subtitle {
+            color: #64748b;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Repair-Focused Cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.8rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 1.2rem;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+            border-left: 5px solid #3b82f6;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .service-card.orange-accent {
+            border-left: 5px solid #f97316;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px rgba(0,0,0,0.08);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: #f97316;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: #0f172a;
+        }
+
+        .repair-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #fee2e2;
+            color: #dc2626;
+            font-weight: 700;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Repair Process Steps */
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .step {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.8rem;
+            text-align: center;
+            flex: 1 1 180px;
+            max-width: 220px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            border-bottom: 4px solid #3b82f6;
+        }
+
+        .step-number {
+            background: #f97316;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.2rem;
+            margin: 0 auto 1rem;
+        }
+
+        .step i {
+            font-size: 2rem;
+            color: #3b82f6;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Brands Section */
+        .brands-section {
+            background: #ffffff;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+        }
+
+        .brands-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .brand-item {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #f1f5f9;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .brand-item i {
+            color: #3b82f6;
+        }
+
+        /* Clients Section */
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .client-chip {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.8rem;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+        }
+
+        .client-chip:hover {
+            border-color: #f97316;
+            background: #fff7ed;
+        }
+
+        .client-chip i {
+            color: #3b82f6;
+        }
+
+        /* Contact Section */
+        .contact-card {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            border-radius: 1.5rem;
+            padding: 3rem;
+            margin: 3rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-detail i {
+            font-size: 1.3rem;
+            color: #f97316;
+            width: 24px;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+        }
+
+        .location-highlight {
+            background: rgba(255,255,255,0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: #0a0a0a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .contact-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-print"></i>
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <div class="logo-text">
+                    Printer<span class="blue">care</span> <span class="orange">Uganda</span>
+                    <small>Repair • Service • Support</small>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#repair">Repair</a>
+                <a href="#brands">Brands</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1><span class="blue">Printer Repair</span> <span class="orange">Experts</span> Across Uganda</h1>
+                    <p>Your printer stopped working? We fix all brands – HP, Canon, Epson, Brother. From Kampala to every district, our experienced technicians come to you.</p>
+                    <div class="hero-buttons">
+                        <a href="tel:+256702747217" class="btn btn-primary"><i class="fas fa-tools"></i> Request Repair</a>
+                        <a href="https://wa.me/256702747217" class="btn btn-outline-light"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="repair-badge">
+                        <i class="fas fa-print"></i>
+                        <i class="fas fa-wrench"></i>
+                        <h3>We Fix Printers</h3>
+                        <p>All brands • Nationwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- How Our Repair Service Works -->
+        <h2 class="section-title"><i class="fas fa-tools"></i> How Our Printer Repair Works</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <i class="fas fa-phone-alt"></i>
+                <h4>You Call/WhatsApp</h4>
+                <p>Describe the issue – we help diagnose over the phone.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <i class="fas fa-truck"></i>
+                <h4>We Come to You</h4>
+                <p>Our technician reaches your location anywhere in Uganda.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <i class="fas fa-wrench"></i>
+                <h4>Expert Repair</h4>
+                <p>On-site diagnosis and repair with genuine parts.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <i class="fas fa-check-circle"></i>
+                <h4>Printer Works</h4>
+                <p>Your printer is back to perfect working condition.</p>
+            </div>
+        </div>
+
+        <!-- Repair Services Detail -->
+        <h2 class="section-title" id="repair"><i class="fas fa-cogs"></i> Our Repair & Service Specialties</h2>
+        <p class="subtitle">We don't just sell – we fix. Our experienced team handles every printer problem.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="repair-tag">Most Requested</span>
+                <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                <h3>General Printer Repair</h3>
+                <p>Paper jams, error codes, no power, print quality issues – we diagnose and fix all hardware and software problems on-site.</p>
+            </div>
+            <div class="service-card orange-accent">
+                <span class="repair-tag">Specialist</span>
+                <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+                <h3>Epson & Canon Resetting</h3>
+                <p>Waste ink pad counter reset, firmware adjustments, and error clearing for Epson and Canon printers. Bring them back to life.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Printer Networking & Repair</h3>
+                <p>Network printer not connecting? We set up, troubleshoot, and repair shared office printers so everyone can print again.</p>
+            </div>
+            <div class="service-card orange-accent">
+                <div class="service-icon"><i class="fas fa-fill-drip"></i></div>
+                <h3>Toner & Cartridge Service</h3>
+                <p>Refilling and replacement for toner and ink cartridges. We also fix cartridge recognition errors.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                <h3>Preventive Maintenance</h3>
+                <p>Regular servicing contracts for offices, schools, and businesses. Stop breakdowns before they happen.</p>
+            </div>
+            <div class="service-card orange-accent">
+                <div class="service-icon"><i class="fas fa-truck"></i></div>
+                <h3>Mobile On-Site Repair</h3>
+                <p>We come to your office, school, or business – anywhere in Uganda. Fast response for Kampala and nationwide.</p>
+            </div>
+        </div>
+
+        <!-- Brands We Repair -->
+        <div class="brands-section" id="brands">
+            <h2 class="section-title" style="margin-top: 0;"><i class="fas fa-tag"></i> Printers We Repair</h2>
+            <p style="color: #64748b; margin-bottom: 1rem;">Our technicians are trained on every major brand. No printer is too complex.</p>
+            <div class="brands-grid">
+                <div class="brand-item"><i class="fas fa-print"></i> HP</div>
+                <div class="brand-item"><i class="fas fa-print"></i> Canon</div>
+                <div class="brand-item"><i class="fas fa-print"></i> Epson</div>
+                <div class="brand-item"><i class="fas fa-print"></i> Brother</div>
+                <div class="brand-item"><i class="fas fa-print"></i> Samsung</div>
+                <div class="brand-item"><i class="fas fa-print"></i> Xerox</div>
+                <div class="brand-item"><i class="fas fa-print"></i> Kyocera</div>
+                <div class="brand-item"><i class="fas fa-print"></i> Ricoh</div>
+                <div class="brand-item"><i class="fas fa-print"></i> Lexmark</div>
+                <div class="brand-item"><i class="fas fa-print"></i> Dell</div>
+             <b>  <center> And other Brands</center></b>
+            </div>
+        </div>
+
+        <!-- Who We Serve -->
+        <h2 class="section-title" id="clients"><i class="fas fa-building"></i> Who Relies on Our Repair Service</h2>
+        <p class="subtitle">From small stationery shops to government ministries – we keep Uganda printing.</p>
+        <div class="clients-grid">
+            <div class="client-chip"><i class="fas fa-building"></i> Offices</div>
+            <div class="client-chip"><i class="fas fa-store"></i> Stationeries</div>
+            <div class="client-chip"><i class="fas fa-school"></i> Schools</div>
+            <div class="client-chip"><i class="fas fa-landmark"></i> Government Institutions</div>
+            <div class="client-chip"><i class="fas fa-gas-pump"></i> Petrol Stations</div>
+            <div class="client-chip"><i class="fas fa-hospital"></i> Hospitals</div>
+            <div class="client-chip"><i class="fas fa-bank"></i> Banks</div>
+            <div class="client-chip"><i class="fas fa-hotel"></i> Hotels</div>
+            <div class="client-chip"><i class="fas fa-church"></i> NGOs</div>
+            <div class="client-chip"><i class="fas fa-university"></i> Universities</div>
+            <b><center>And others</center></b>
+            
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-card" id="contact">
+            <div class="contact-info">
+                <h2><i class="fas fa-map-marker-alt" style="color: #f97316;"></i> Bring Your Printer or We Come to You</h2>
+                <div class="location-highlight">
+                    <p style="font-weight: 700; font-size: 1.2rem;">📍 Kampala Road, E-M Plaza, Level 1, A05</p>
+                    <p style="margin-top: 0.5rem; color: #cbd5e1;">Our repair workshop is open – or we dispatch a technician to your location anywhere in Uganda.</p>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-phone-alt"></i>
+                    <span><strong>Call for Repair:</strong> +256 702 747217</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fab fa-whatsapp"></i>
+                    <span><strong>WhatsApp:</strong> +256 702 747217</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <span><strong>Email:</strong> printercareuganda@gmail.com</span>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="https://wa.me/256702747217" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat Now for Repair
+                    </a>
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <i class="fas fa-tools" style="font-size: 5rem; color: #f97316; opacity: 0.9;"></i>
+                <p style="margin-top: 1rem; font-weight: 700; font-size: 1.2rem;">Printer Not Working?</p>
+                <p style="color: #cbd5e1;">We fix it – guaranteed.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Printercare Uganda. Kampala Road, E-M Plaza Level 1 A05.</p>
+            <p style="margin-top: 0.5rem;">Printer Repair Specialists – Serving all of Uganda.</p>
+        </div>
+    </footer>
+</body>
+</html>
