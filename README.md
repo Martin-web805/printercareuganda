@@ -1,1 +1,1 @@
-This website belongs to printercare Uganad
+This website belongs to printercare Uganda
