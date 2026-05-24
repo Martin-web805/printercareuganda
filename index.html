@@ -3,68 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrinterCare Uganda | Expert Printer Repair Kampala</title>
-    <meta name="description" content="PrinterCare Uganda - Expert printer repair, firmware upgrades, software installation. All brands. Door-to-door service. Kampala & beyond.">
+    <title>Printer Repair Uganda | #1 Printer Service in Kampala, Jinja, Entebbe & Nationwide</title>
+    <meta name="description" content="PrinterCare Uganda - Best printer repair in Kampala & across Uganda. Epson, Canon, HP, Brother experts. Software installs, firmware upgrades, door-to-door service. Printer repair near me in Kampala, Jinja, Mukono, Entebbe, Gulu, Mubende, Kasese & more. Call +256702747217.">
+    <meta name="keywords" content="printer repair uganda, printer repair kampala, epson service uganda, printer repair near me, canon printer repair kampala, hp printer service uganda, printer repair jinja, printer repair entebbe, printer repair mukono, printer repair gulu, printer repair mubende, printer repair kasese, firmware upgrade uganda, printer spare parts kampala, cartridge refill kampala, door to door printer repair uganda">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="PrinterCare Uganda">
+    <link rel="canonical" href="https://printercareuganda.github.io/">
+    <meta property="og:title" content="Printer Repair Uganda | #1 Printer Service Kampala & Nationwide">
+    <meta property="og:description" content="Fast, reliable printer repair in Kampala, Jinja, Entebbe & across Uganda. All brands. Software install, firmware upgrade, door-to-door. Same-day service.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
-            --bg-dark: #0a0a0a;
-            --bg-card: #141414;
-            --bg-section: #0f0f0f;
-            --orange: #f47920;
-            --orange-bright: #ff8c3a;
-            --orange-soft: #fff1e6;
+            --navy: #060d18;
+            --navy-light: #0d1a2d;
+            --gold: #d4942b;
+            --gold-hover: #b87a1e;
+            --gold-light: #fdf3e4;
             --white: #ffffff;
-            --gray: #a0a0a0;
-            --gray-light: #c0c0c0;
-            --border: #262626;
-            --border-light: #333333;
-            --red: #e63946;
-            --green: #2ecc71;
-            --radius: 6px;
-            --radius-lg: 12px;
-            --shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
-            --shadow-orange: 0 4px 18px rgba(244, 121, 32, 0.2);
-            --transition: all 0.25s ease;
+            --light-bg: #f5f6f8;
+            --gray: #5c6778;
+            --dark: #111827;
+            --border: #dde1e8;
+            --radius: 10px;
+            --shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 5px 18px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 10px 32px rgba(0, 0, 0, 0.10);
+            --transition: all 0.24s ease;
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: var(--bg-dark);
-            color: #e0e0e0;
-            line-height: 1.6;
+            background: var(--white);
+            color: var(--dark);
+            line-height: 1.62;
             -webkit-font-smoothing: antialiased;
-            padding-top: 68px;
+            padding-top: 66px;
         }
-
         .container {
-            max-width: 1080px;
+            max-width: 1140px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 18px;
         }
 
         /* ========== FIXED HEADER ========== */
         header {
-            background: rgba(10, 10, 10, 0.96);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
+            background: var(--navy);
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             z-index: 1000;
-            border-bottom: 1px solid var(--border);
-            height: 68px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+            height: 66px;
             display: flex;
             align-items: center;
         }
@@ -83,31 +81,30 @@
             flex-shrink: 0;
         }
         .logo-icon {
-            width: 38px;
-            height: 38px;
-            background: var(--orange);
-            border-radius: 7px;
+            width: 40px;
+            height: 40px;
+            background: var(--gold);
+            border-radius: 9px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.1rem;
+            color: var(--navy);
+            font-size: 1.15rem;
             font-weight: 900;
-            color: #000;
         }
         .logo-text {
-            font-size: 1.1rem;
+            font-size: 1.08rem;
             font-weight: 800;
             color: #fff;
             letter-spacing: -0.3px;
-            line-height: 1.1;
+            line-height: 1.2;
         }
-        .logo-text span {
+        .logo-text small {
             display: block;
             font-size: 0.58rem;
-            color: var(--orange);
-            font-weight: 600;
-            letter-spacing: 0.6px;
-            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 500;
+            letter-spacing: 0.4px;
         }
         .nav-links {
             display: flex;
@@ -115,19 +112,20 @@
             align-items: center;
         }
         .nav-links a {
-            color: #b0b0b0;
+            color: rgba(255, 255, 255, 0.78);
             text-decoration: none;
             font-weight: 600;
             font-size: 0.82rem;
             transition: var(--transition);
             white-space: nowrap;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
         .nav-links a:hover {
-            color: var(--orange);
+            color: var(--gold);
         }
-        .header-btn {
+        .header-actions {
+            display: flex;
+            gap: 7px;
+            align-items: center;
             flex-shrink: 0;
         }
 
@@ -136,35 +134,34 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 10px 19px;
+            border-radius: 50px;
             font-weight: 700;
             text-decoration: none;
-            font-size: 0.82rem;
+            font-size: 0.81rem;
             cursor: pointer;
             border: none;
             transition: var(--transition);
             white-space: nowrap;
-            letter-spacing: 0.3px;
-            text-transform: uppercase;
+            letter-spacing: 0.2px;
         }
-        .btn-orange {
-            background: var(--orange);
-            color: #000;
+        .btn-gold {
+            background: var(--gold);
+            color: #fff;
         }
-        .btn-orange:hover {
-            background: var(--orange-bright);
-            box-shadow: var(--shadow-orange);
+        .btn-gold:hover {
+            background: var(--gold-hover);
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 148, 43, 0.35);
         }
-        .btn-outline {
-            border: 2px solid var(--orange);
-            color: var(--orange);
+        .btn-outline-light {
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            color: #fff;
             background: transparent;
         }
-        .btn-outline:hover {
-            background: var(--orange);
-            color: #000;
+        .btn-outline-light:hover {
+            border-color: var(--gold);
+            color: var(--gold);
         }
         .btn-wa {
             background: #25D366;
@@ -175,164 +172,147 @@
             transform: translateY(-2px);
         }
         .btn-dark {
-            background: #1a1a1a;
+            background: var(--navy);
             color: #fff;
-            border: 1px solid var(--border);
         }
         .btn-dark:hover {
-            border-color: var(--orange);
+            background: #020812;
+            transform: translateY(-2px);
+        }
+        .btn-outline-dark {
+            border: 2px solid var(--navy);
+            color: var(--navy);
+            background: transparent;
+        }
+        .btn-outline-dark:hover {
+            background: var(--navy);
+            color: #fff;
+        }
+        .btn-full {
+            width: 100%;
+            justify-content: center;
+            padding: 14px 22px;
+            font-size: 0.92rem;
         }
 
         /* ========== HERO ========== */
         .hero {
-            background: var(--bg-dark);
-            padding: 48px 0 50px;
+            background: linear-gradient(150deg, #060d18 0%, #0f1b30 50%, #060d18 100%);
+            color: #fff;
+            padding: 36px 0 44px;
             position: relative;
             overflow: hidden;
-            border-bottom: 1px solid var(--border);
         }
-        .hero::before {
+        .hero::after {
             content: '';
             position: absolute;
-            top: -80px;
-            right: -80px;
-            width: 380px;
-            height: 380px;
-            background: radial-gradient(circle, rgba(244, 121, 32, 0.1) 0%, transparent 70%);
+            bottom: -30px;
+            right: -50px;
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(circle, rgba(212, 148, 43, 0.16) 0%, transparent 70%);
             border-radius: 50%;
-            pointer-events: none;
         }
         .hero .container {
             position: relative;
             z-index: 1;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
+            gap: 26px;
             align-items: center;
         }
         .hero h1 {
-            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            font-size: clamp(1.5rem, 2.8vw, 2.1rem);
             font-weight: 900;
-            line-height: 1.15;
+            line-height: 1.22;
             margin-bottom: 12px;
-            color: #fff;
         }
-        .hero h1 em {
-            color: var(--orange);
-            font-style: normal;
+        .hero h1 span {
+            color: var(--gold);
         }
-        .hero p {
-            font-size: 0.95rem;
-            color: #aaa;
-            margin-bottom: 22px;
-            max-width: 440px;
+        .hero .subtitle {
+            font-size: 0.94rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            max-width: 450px;
+            color: #c4cddb;
         }
         .hero-buttons {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 9px;
         }
-        .hero-badge {
+        .hero-visual {
             display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        .badge-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: 18px 12px;
+        .hero-img-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 160px;
+            height: 160px;
+            box-shadow: 0 8px 26px rgba(0, 0, 0, 0.30);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 7px;
+            color: var(--navy);
+            font-weight: 700;
+            font-size: 0.76rem;
             text-align: center;
-            min-width: 80px;
-            flex: 1;
-            max-width: 100px;
+            padding: 10px;
         }
-        .badge-card i {
-            font-size: 1.6rem;
-            color: var(--orange);
-            margin-bottom: 5px;
+        .hero-img-card i {
+            font-size: 3rem;
+            color: var(--gold);
         }
-        .badge-card strong {
-            display: block;
-            font-size: 1rem;
-            color: #fff;
+        .hero-img-card.sm {
+            width: 115px;
+            height: 115px;
         }
-        .badge-card span {
-            font-size: 0.65rem;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 0.4px;
+        .hero-img-card.sm i {
+            font-size: 2rem;
         }
 
         /* ========== SECTION STYLES ========== */
         section {
             padding: 50px 0;
         }
-        .section-dark {
-            background: var(--bg-section);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
+        .bg-light {
+            background: var(--light-bg);
         }
         .section-header {
             text-align: center;
-            margin-bottom: 36px;
+            margin-bottom: 34px;
         }
-        .section-header .tag {
+        .section-header .badge {
             display: inline-block;
-            background: rgba(244, 121, 32, 0.12);
-            color: var(--orange);
-            padding: 4px 12px;
-            border-radius: 3px;
+            background: var(--gold-light);
+            color: #8b5e14;
+            padding: 5px 14px;
+            border-radius: 50px;
             font-weight: 700;
-            font-size: 0.68rem;
+            font-size: 0.71rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 10px;
+            letter-spacing: 1.2px;
+            margin-bottom: 9px;
         }
         .section-header h2 {
-            font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+            font-size: clamp(1.3rem, 2.1vw, 1.8rem);
             font-weight: 900;
-            color: #fff;
-            margin-bottom: 6px;
+            color: var(--navy);
+            margin-bottom: 5px;
         }
         .section-header p {
-            color: #888;
-            max-width: 480px;
+            color: var(--gray);
+            max-width: 520px;
             margin: 0 auto;
-            font-size: 0.88rem;
-        }
-
-        /* ========== BRAND TAGS ========== */
-        .brand-tags {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 9px;
-        }
-        .brand-tag {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 5px;
-            padding: 9px 15px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-weight: 700;
-            font-size: 0.76rem;
-            color: #ccc;
-            transition: var(--transition);
-            text-transform: uppercase;
-            letter-spacing: 0.4px;
-        }
-        .brand-tag:hover {
-            border-color: var(--orange);
-            color: var(--orange);
-            background: rgba(244, 121, 32, 0.06);
-        }
-        .brand-tag i {
-            font-size: 0.9rem;
-            color: var(--orange);
+            font-size: 0.89rem;
         }
 
         /* ========== SERVICE CARDS ========== */
@@ -342,39 +322,39 @@
             gap: 14px;
         }
         .service-card {
-            background: var(--bg-card);
+            background: #fff;
             border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: 22px 18px;
+            border-radius: var(--radius);
+            padding: 20px 16px;
             transition: var(--transition);
-            position: relative;
+            box-shadow: var(--shadow);
         }
         .service-card:hover {
-            border-color: var(--orange);
-            box-shadow: var(--shadow);
-            transform: translateY(-3px);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--gold);
         }
-        .service-card .s-icon {
-            width: 38px;
-            height: 38px;
-            background: rgba(244, 121, 32, 0.12);
-            border-radius: 7px;
+        .service-card .icon-wrap {
+            width: 40px;
+            height: 40px;
+            background: var(--gold-light);
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             margin-bottom: 10px;
         }
         .service-card h3 {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             font-weight: 800;
-            color: #fff;
-            margin-bottom: 4px;
+            color: var(--navy);
+            margin-bottom: 3px;
         }
         .service-card p {
-            font-size: 0.78rem;
-            color: #999;
-            line-height: 1.45;
+            font-size: 0.79rem;
+            color: var(--gray);
+            line-height: 1.5;
         }
 
         /* ========== ERROR CARDS ========== */
@@ -384,116 +364,189 @@
             gap: 9px;
         }
         .error-card {
-            background: var(--bg-card);
+            background: #fff;
             border: 1px solid var(--border);
             border-radius: var(--radius);
-            padding: 16px 10px;
+            padding: 14px 8px;
             text-align: center;
             transition: var(--transition);
+            box-shadow: var(--shadow);
         }
         .error-card:hover {
-            border-color: var(--orange);
-            box-shadow: 0 0 16px rgba(244, 121, 32, 0.08);
+            border-color: var(--gold);
+            box-shadow: 0 4px 14px rgba(212, 148, 43, 0.10);
         }
-        .error-card .e-icon {
-            font-size: 1.4rem;
+        .error-card i {
+            font-size: 1.3rem;
+            color: var(--gold);
             margin-bottom: 5px;
         }
         .error-card h4 {
-            font-size: 0.72rem;
+            font-size: 0.73rem;
             font-weight: 700;
-            color: #fff;
-            margin-bottom: 2px;
+            color: var(--navy);
+            margin-bottom: 1px;
         }
         .error-card span {
-            font-size: 0.65rem;
-            color: #777;
+            font-size: 0.64rem;
+            color: var(--gray);
         }
 
-        /* ========== CLIENTS ========== */
-        .clients-grid {
+        /* ========== LOGO GRID ========== */
+        .logo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-            gap: 10px;
-            align-items: stretch;
+            grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+            gap: 11px;
+            align-items: center;
         }
-        .client-card {
-            background: var(--bg-card);
+        .logo-card {
+            background: #fff;
             border: 1px solid var(--border);
             border-radius: var(--radius);
-            padding: 16px 8px;
+            padding: 14px 8px;
             text-align: center;
             transition: var(--transition);
         }
-        .client-card:hover {
-            border-color: var(--orange);
-            box-shadow: var(--shadow);
+        .logo-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--gold);
         }
-        .client-card i {
-            font-size: 1.4rem;
-            color: var(--orange);
+        .logo-card i {
+            font-size: 1.5rem;
+            color: var(--gold);
             margin-bottom: 4px;
         }
-        .client-card span {
+        .logo-card span {
             display: block;
             font-size: 0.68rem;
             font-weight: 700;
-            color: #ccc;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
+            color: var(--navy);
+        }
+        .logo-card .more {
+            font-size: 0.6rem;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        /* ========== QUOTE FORM ========== */
+        .quote-section {
+            background: var(--navy);
+            color: #fff;
+            padding: 50px 0;
+        }
+        .quote-section .section-header h2 {
+            color: #fff;
+        }
+        .quote-section .section-header p {
+            color: #c4cddb;
+        }
+        .quote-section .section-header .badge {
+            background: rgba(255, 255, 255, 0.13);
+            color: #fff;
+        }
+        .quote-form-wrap {
+            max-width: 580px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 26px;
+        }
+        .form-group {
+            margin-bottom: 14px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 4px;
+            font-size: 0.81rem;
+            color: #dde3ed;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 11px 13px;
+            border-radius: 7px;
+            border: 1px solid rgba(255, 255, 255, 0.17);
+            background: rgba(255, 255, 255, 0.06);
+            color: #fff;
+            font-family: inherit;
+            font-size: 0.86rem;
+            transition: var(--transition);
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: rgba(255, 255, 255, 0.11);
+        }
+        .form-group select option {
+            background: var(--navy);
+            color: #fff;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 95px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
         }
 
         /* ========== CONTACT ========== */
         .contact-card {
-            background: var(--bg-card);
+            background: #fff;
             border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: 28px;
-            max-width: 580px;
+            border-radius: var(--radius);
+            padding: 24px;
+            max-width: 600px;
             margin: 0 auto;
+            box-shadow: var(--shadow-md);
         }
-        .contact-row {
+        .contact-item {
             display: flex;
             align-items: flex-start;
             gap: 11px;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
-        .contact-row i {
-            color: var(--orange);
-            font-size: 0.95rem;
-            margin-top: 4px;
-            width: 16px;
+        .contact-item i {
+            color: var(--gold);
+            font-size: 1rem;
+            margin-top: 3px;
+            width: 19px;
             text-align: center;
         }
-        .contact-row strong {
+        .contact-item strong {
             display: block;
-            font-size: 0.82rem;
-            color: #fff;
-            margin-bottom: 2px;
+            margin-bottom: 1px;
+            font-size: 0.84rem;
+            color: var(--navy);
         }
-        .contact-row span {
-            font-size: 0.82rem;
-            color: #aaa;
+        .contact-item span {
+            color: var(--gray);
+            font-size: 0.84rem;
         }
         .contact-buttons {
             display: flex;
             flex-wrap: wrap;
-            gap: 9px;
-            margin-top: 18px;
+            gap: 7px;
+            margin-top: 15px;
             justify-content: center;
         }
 
         /* ========== FOOTER ========== */
         footer {
-            background: #070707;
-            border-top: 1px solid var(--border);
-            padding: 22px 0;
+            background: #030810;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 20px 0;
             text-align: center;
-            font-size: 0.75rem;
-            color: #666;
+            font-size: 0.74rem;
         }
         footer a {
-            color: var(--orange);
+            color: var(--gold);
             text-decoration: none;
             font-weight: 600;
         }
@@ -506,16 +559,17 @@
             left: 0;
             right: 0;
             z-index: 999;
-            background: var(--bg-card);
-            border-top: 1px solid var(--border);
-            padding: 7px 12px;
+            background: #fff;
+            border-top: 2px solid var(--border);
+            padding: 7px 10px;
             gap: 7px;
+            box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.10);
         }
         .sticky-mobile-cta .btn {
             flex: 1;
             justify-content: center;
             font-size: 0.73rem;
-            padding: 11px 8px;
+            padding: 10px 6px;
         }
 
         /* ========== RESPONSIVE ========== */
@@ -524,15 +578,14 @@
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            .hero p {
+            .hero .subtitle {
                 max-width: 100%;
             }
             .hero-buttons {
                 justify-content: center;
             }
-            .hero-badge {
+            .hero-visual {
                 order: -1;
-                justify-content: center;
             }
             .nav-links {
                 display: none;
@@ -540,21 +593,28 @@
             .services-grid {
                 grid-template-columns: 1fr 1fr;
             }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
         }
         @media (max-width: 600px) {
             body {
-                padding-top: 58px;
+                padding-top: 54px;
             }
             header {
-                height: 58px;
+                height: 54px;
             }
             .logo-text {
-                font-size: 0.95rem;
+                font-size: 0.88rem;
             }
             .logo-icon {
                 width: 32px;
                 height: 32px;
                 font-size: 0.9rem;
+            }
+            .header-actions .btn {
+                padding: 6px 10px;
+                font-size: 0.66rem;
             }
             .services-grid {
                 grid-template-columns: 1fr;
@@ -562,20 +622,20 @@
             .errors-grid {
                 grid-template-columns: 1fr 1fr;
             }
-            .clients-grid {
-                grid-template-columns: 1fr 1fr;
+            .logo-grid {
+                grid-template-columns: 1fr 1fr 1fr;
             }
             .sticky-mobile-cta {
                 display: flex;
             }
             footer {
-                margin-bottom: 60px;
+                margin-bottom: 56px;
             }
             .hero {
-                padding: 28px 0 32px;
+                padding: 24px 0 30px;
             }
             section {
-                padding: 32px 0;
+                padding: 34px 0;
             }
         }
     </style>
@@ -586,18 +646,20 @@
     <header>
         <div class="container header-inner">
             <a href="#" class="logo-area">
-                <div class="logo-icon">🔧</div>
-                <div class="logo-text">PrinterCare<span>Uganda</span></div>
+                <div class="logo-icon"><i class="fas fa-print"></i></div>
+                <div class="logo-text">PrinterCare Uganda<small>Printer Repair Kampala & Uganda</small></div>
             </a>
             <nav class="nav-links">
                 <a href="#services">Services</a>
-                <a href="#brands">Brands</a>
                 <a href="#errors">Errors</a>
+                <a href="#brands">Brands</a>
+                <a href="#locations">Locations</a>
                 <a href="#clients">Clients</a>
+                <a href="#quote">Quote</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <div class="header-btn">
-                <a href="tel:+256702747217" class="btn btn-orange"><i class="fas fa-phone"></i> Call</a>
+            <div class="header-actions">
+                <a href="tel:+256702747217" class="btn btn-gold"><i class="fas fa-phone"></i> +256 702 747 217</a>
             </div>
         </div>
     </header>
@@ -606,45 +668,31 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-text">
-                <h1>Expert <em>Printer Repair</em> in Kampala</h1>
-                <p>Fast, technical printer repairs for ALL brands & models. Firmware upgrades, software installation & door-to-door service across Kampala and beyond Uganda.</p>
+                <h1><span>#1 Printer Repair</span> in Uganda — Fast, Affordable & Reliable</h1>
+                <p class="subtitle">Expert <strong>printer repair in Kampala</strong>, Jinja, Entebbe, Mukono, Gulu & across Uganda. We fix <strong>Epson, Canon, HP, Brother</strong> & all brands. <strong>Software installs, firmware upgrades</strong>. Same-day <strong>printer repair near me</strong> — door-to-door available.</p>
                 <div class="hero-buttons">
-                    <a href="tel:+256702747217" class="btn btn-orange"><i class="fas fa-phone"></i> Call Now</a>
+                    <a href="tel:+256702747217" class="btn btn-gold"><i class="fas fa-phone"></i> Call: +256 702 747 217</a>
                     <a href="https://wa.me/256702747217" class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                    <a href="#services" class="btn btn-outline">Our Services</a>
+                    <a href="#quote" class="btn btn-outline-dark">Free Quote</a>
                 </div>
             </div>
-            <div class="hero-badge">
-                <div class="badge-card"><i class="fas fa-print"></i><strong>All Brands</strong><span>Printers</span></div>
-                <div class="badge-card"><i class="fas fa-microchip"></i><strong>Firmware</strong><span>Updates</span></div>
-                <div class="badge-card"><i class="fas fa-truck-fast"></i><strong>Door-to-Door</strong><span>Service</span></div>
-                <div class="badge-card"><i class="fas fa-droplet"></i><strong>Ink & Toner</strong><span>Supply</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BRANDS -->
-    <section class="section-dark" id="brands">
-        <div class="container">
-            <div class="section-header">
-                <div class="tag">We Cover</div>
-                <h2>All Printer Brands & Models</h2>
-                <p>LaserJet, InkJet, All-in-One — we repair, service & supply parts for every major brand worldwide.</p>
-            </div>
-            <div class="brand-tags">
-                <div class="brand-tag"><i class="fas fa-print"></i> Epson</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> Canon</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> HP</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> Brother</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> Kyocera</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> Samsung</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> Xerox</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> Lexmark</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> Ricoh</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> Dell</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> OKI</div>
-                <div class="brand-tag"><i class="fas fa-print"></i> Panasonic</div>
-                <div class="brand-tag"><i class="fas fa-ellipsis-h"></i> And More</div>
+            <div class="hero-visual">
+                <div class="hero-img-card">
+                    <i class="fas fa-print"></i>
+                    <span>Printer Repair</span>
+                </div>
+                <div class="hero-img-card sm">
+                    <i class="fas fa-cogs"></i>
+                    <span>Software Install</span>
+                </div>
+                <div class="hero-img-card sm">
+                    <i class="fas fa-microchip"></i>
+                    <span>Firmware Upgrade</span>
+                </div>
+                <div class="hero-img-card sm">
+                    <i class="fas fa-truck-fast"></i>
+                    <span>Door-to-Door</span>
+                </div>
             </div>
         </div>
     </section>
@@ -653,202 +701,280 @@
     <section id="services">
         <div class="container">
             <div class="section-header">
-                <div class="tag">What We Do</div>
-                <h2>Printer Repair & Technical Support</h2>
-                <p>Door-to-door service across Kampala, Wakiso, Mukono & beyond Uganda.</p>
+                <div class="badge">Our Expertise</div>
+                <h2>Professional Printer Repair & Support Services Uganda</h2>
+                <p>We repair all printer brands — LaserJet & InkJet. <strong>Printer repair Kampala</strong> & nationwide. Software installs, firmware upgrades, door-to-door & more others.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="s-icon">🔧</div>
-                    <h3>Hardware Repair</h3>
-                    <p>Paper jams, print head cleaning, board repair, fuser replacement — all brands & models.</p>
+                    <div class="icon-wrap"><i class="fas fa-print"></i></div>
+                    <h3>Printer Hardware Repair</h3>
+                    <p>Paper jams, print head cleaning, board repair, fuser fix. All brands: Epson, Canon, HP, Brother & more others.</p>
                 </div>
                 <div class="service-card">
-                    <div class="s-icon">💿</div>
+                    <div class="icon-wrap"><i class="fas fa-cogs"></i></div>
                     <h3>Software Installation</h3>
-                    <p>Printer driver setup, scanner software, network configuration on Windows, Mac & Linux.</p>
+                    <p>Printer software, scanner utilities, print management tools. Full setup & configuration for all devices & more others.</p>
                 </div>
                 <div class="service-card">
-                    <div class="s-icon">⬆️</div>
+                    <div class="icon-wrap"><i class="fas fa-microchip"></i></div>
                     <h3>Firmware Upgrades</h3>
-                    <p>Official firmware updates to fix bugs, improve speed & unlock new printer features.</p>
+                    <p>Printer firmware updates to fix bugs & improve performance. All models supported. Epson, Canon, HP & more others.</p>
                 </div>
                 <div class="service-card">
-                    <div class="s-icon">🛒</div>
-                    <h3>Printer Sales & Parts</h3>
-                    <p>New & refurbished printers with warranty. Genuine cartridges, CISS ink, toner & spare parts.</p>
+                    <div class="icon-wrap"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>Printer Sales & Supplies</h3>
+                    <p>New & refurbished printers with warranty. Genuine cartridges, CISS ink, toner, spare parts & more others.</p>
                 </div>
                 <div class="service-card">
-                    <div class="s-icon">🚚</div>
+                    <div class="icon-wrap"><i class="fas fa-truck"></i></div>
                     <h3>Door-to-Door Service</h3>
-                    <p>We pick up, repair & deliver. Most repairs completed within 24 hours — fast turnaround.</p>
+                    <p>We pick, repair & deliver. <strong>Printer repair near me</strong> — Kampala, Jinja, Mukono, Entebbe, Gulu & more others.</p>
                 </div>
                 <div class="service-card">
-                    <div class="s-icon">🖨️</div>
-                    <h3>All Printer Types</h3>
-                    <p>LaserJet, InkJet, Dot Matrix, Thermal, All-in-One — we repair them all with genuine parts.</p>
+                    <div class="icon-wrap"><i class="fas fa-sync-alt"></i></div>
+                    <h3>Printer Maintenance</h3>
+                    <p>Regular servicing, cleaning, and preventive maintenance for all printer brands & models & more others.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COMMON ERRORS -->
-    <section class="section-dark" id="errors">
+    <!-- COMMON PRINTER ERRORS -->
+    <section id="errors" class="bg-light">
         <div class="container">
             <div class="section-header">
-                <div class="tag">Quick Fixes</div>
-                <h2>Common Printer Errors We Resolve</h2>
-                <p>We fix these daily. Don't replace your printer — let us repair it.</p>
+                <div class="badge">Quick Fixes</div>
+                <h2>Common Printer Errors We Repair Daily</h2>
+                <p><strong>Printer repair in Uganda</strong> — we resolve these issues fast. Don't replace it, repair it & more others.</p>
             </div>
             <div class="errors-grid">
-                <div class="error-card">
-                    <div class="e-icon">⚠️</div>
-                    <h4>0x97 Error</h4>
-                    <span>Epson hardware</span>
-                </div>
-                <div class="error-card">
-                    <div class="e-icon">⚠️</div>
-                    <h4>P07 / P08</h4>
-                    <span>Canon ink system</span>
-                </div>
-                <div class="error-card">
-                    <div class="e-icon">⚠️</div>
-                    <h4>Cartridge Error</h4>
-                    <span>HP ink/toner</span>
-                </div>
-                <div class="error-card">
-                    <div class="e-icon">📄</div>
-                    <h4>Paper Jam</h4>
-                    <span>All brands</span>
-                </div>
-                <div class="error-card">
-                    <div class="e-icon">💧</div>
-                    <h4>Clogged Print Head</h4>
-                    <span>Clean & replace</span>
-                </div>
-                <div class="error-card">
-                    <div class="e-icon">🔥</div>
-                    <h4>Fuser Error</h4>
-                    <span>LaserJet heating</span>
-                </div>
-                <div class="error-card">
-                    <div class="e-icon">🪣</div>
-                    <h4>Waste Ink Full</h4>
-                    <span>Reset service</span>
-                </div>
-                <div class="error-card">
-                    <div class="e-icon">📡</div>
-                    <h4>Offline Status</h4>
-                    <span>Network/WiFi fix</span>
-                </div>
-                <div class="error-card">
-                    <div class="e-icon">🔌</div>
-                    <h4>No Power</h4>
-                    <span>Board diagnosis</span>
-                </div>
-                <div class="error-card">
-                    <div class="e-icon">🖨️</div>
-                    <h4>Print Quality</h4>
-                    <span>Lines & smudges</span>
-                </div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>0x97 Error</h4><span>Epson fix</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>P07 / P08</h4><span>Canon ink system</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>Cartridge Error</h4><span>HP toner/ink</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>Paper Jam</h4><span>All brands</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>Print Head Clog</h4><span>Cleaning service</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>Fuser Error</h4><span>LaserJet fix</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>Waste Ink Full</h4><span>Reset service</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>Offline Status</h4><span>Network fix</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>Scanner Error</h4><span>All-in-one fix</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>Blank Pages</h4><span>Ink/toner check</span></div>
+                <div class="error-card"><i class="fas fa-exclamation-circle"></i><h4>Slow Printing</h4><span>Performance fix</span></div>
+                <div class="error-card"><i class="fas fa-ellipsis-h"></i><h4>And More Errors</h4><span>We fix them all</span></div>
             </div>
         </div>
     </section>
 
-    <!-- CLIENTS -->
+    <!-- BRANDS WE SERVICE -->
+    <section id="brands">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Brands We Cover</div>
+                <h2>All Printer Brands & Models Repaired</h2>
+                <p>We service every major printer brand. <strong>Epson service Uganda</strong>, Canon, HP, Brother specialists & more others.</p>
+            </div>
+            <div class="logo-grid">
+                <div class="logo-card"><i class="fas fa-print"></i><span>Epson</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Canon</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>HP</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Brother</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Kyocera</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Samsung</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Xerox</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Lexmark</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Ricoh</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Dell</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>OKI</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Panasonic</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Sharp</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Konica Minolta</span></div>
+                <div class="logo-card"><i class="fas fa-ellipsis-h"></i><span>And More Others</span><span class="more">All brands supported</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATIONS WE SERVE -->
+    <section id="locations" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Service Areas</div>
+                <h2>Printer Repair Near Me — We Cover All Uganda</h2>
+                <p>Door-to-door <strong>printer repair in Kampala</strong> & beyond. We serve these areas & more others.</p>
+            </div>
+            <div class="logo-grid">
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Kampala</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Jinja</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Entebbe</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Mukono</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Gulu</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Mubende</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Kasese</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Wakiso</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Mbale</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Masaka</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Lira</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Mbarara</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Fort Portal</span></div>
+                <div class="logo-card"><i class="fas fa-map-marker-alt"></i><span>Hoima</span></div>
+                <div class="logo-card"><i class="fas fa-ellipsis-h"></i><span>And More Others</span><span class="more">All Uganda covered</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTS WE SERVE -->
     <section id="clients">
         <div class="container">
             <div class="section-header">
-                <div class="tag">Our Clients</div>
-                <h2>Who We Work With</h2>
-                <p>Trusted by businesses, institutions & homes across Uganda.</p>
+                <div class="badge">Our Clients</div>
+                <h2>Who Trusts PrinterCare Uganda</h2>
+                <p>We provide <strong>printer repair in Kampala</strong> & across Uganda to businesses, schools, homes & more others.</p>
             </div>
-            <div class="clients-grid">
-                <div class="client-card">
-                    <i class="fas fa-building"></i>
-                    <span>Corporate Offices</span>
-                </div>
-                <div class="client-card">
-                    <i class="fas fa-school"></i>
-                    <span>Schools & Univ.</span>
-                </div>
-                <div class="client-card">
-                    <i class="fas fa-hospital"></i>
-                    <span>Hospitals</span>
-                </div>
-                <div class="client-card">
-                    <i class="fas fa-store"></i>
-                    <span>Retail Shops</span>
-                </div>
-                <div class="client-card">
-                    <i class="fas fa-bank"></i>
-                    <span>Banks & SACCOs</span>
-                </div>
-                <div class="client-card">
-                    <i class="fas fa-gavel"></i>
-                    <span>Law Firms</span>
-                </div>
-                <div class="client-card">
-                    <i class="fas fa-church"></i>
-                    <span>Churches & NGOs</span>
-                </div>
-                <div class="client-card">
-                    <i class="fas fa-home"></i>
-                    <span>Home Users</span>
-                </div>
-                <div class="client-card">
-                    <i class="fas fa-print"></i>
-                    <span>Printing Bureaus</span>
-                </div>
-                <div class="client-card">
-                    <i class="fas fa-ellipsis-h"></i>
-                    <span>And More Others</span>
+            <div class="logo-grid">
+                <div class="logo-card"><i class="fas fa-building"></i><span>Corporate Offices</span></div>
+                <div class="logo-card"><i class="fas fa-school"></i><span>Schools</span></div>
+                <div class="logo-card"><i class="fas fa-hospital"></i><span>Hospitals</span></div>
+                <div class="logo-card"><i class="fas fa-store"></i><span>Retail Shops</span></div>
+                <div class="logo-card"><i class="fas fa-university"></i><span>Universities</span></div>
+                <div class="logo-card"><i class="fas fa-bank"></i><span>Banks & SACCOs</span></div>
+                <div class="logo-card"><i class="fas fa-gavel"></i><span>Law Firms</span></div>
+                <div class="logo-card"><i class="fas fa-church"></i><span>Churches & NGOs</span></div>
+                <div class="logo-card"><i class="fas fa-home"></i><span>Home Users</span></div>
+                <div class="logo-card"><i class="fas fa-print"></i><span>Printing Bureaus</span></div>
+                <div class="logo-card"><i class="fas fa-industry"></i><span>Factories</span></div>
+                <div class="logo-card"><i class="fas fa-hotel"></i><span>Hotels</span></div>
+                <div class="logo-card"><i class="fas fa-ellipsis-h"></i><span>And More Others</span><span class="more">Everyone welcome</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUEST QUOTE - FORMSPREE INTEGRATED -->
+    <section class="quote-section" id="quote">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Get A Quote</div>
+                <h2>Request Printer Repair Quotation</h2>
+                <p>Describe your printer issue & we'll send a quote directly to your email. <strong>Printer repair near me</strong> — fast response guaranteed & more.</p>
+            </div>
+            <div class="quote-form-wrap">
+                <form id="quoteForm" action="https://formspree.io/f/maqkbzko" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. +256 7XX XXX XXX" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Your Location *</label>
+                            <select id="location" name="location" required>
+                                <option value="">Select your area</option>
+                                <option value="Kampala">Kampala</option>
+                                <option value="Jinja">Jinja</option>
+                                <option value="Entebbe">Entebbe</option>
+                                <option value="Mukono">Mukono</option>
+                                <option value="Gulu">Gulu</option>
+                                <option value="Mubende">Mubende</option>
+                                <option value="Kasese">Kasese</option>
+                                <option value="Wakiso">Wakiso</option>
+                                <option value="Mbale">Mbale</option>
+                                <option value="Masaka">Masaka</option>
+                                <option value="Lira">Lira</option>
+                                <option value="Mbarara">Mbarara</option>
+                                <option value="Fort Portal">Fort Portal</option>
+                                <option value="Hoima">Hoima</option>
+                                <option value="Other">Other (specify in message)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="printer-brand">Printer Brand *</label>
+                        <select id="printer-brand" name="printer-brand" required>
+                            <option value="">Select brand</option>
+                            <option value="Epson">Epson</option>
+                            <option value="Canon">Canon</option>
+                            <option value="HP">HP</option>
+                            <option value="Brother">Brother</option>
+                            <option value="Kyocera">Kyocera</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Xerox">Xerox</option>
+                            <option value="Lexmark">Lexmark</option>
+                            <option value="Ricoh">Ricoh</option>
+                            <option value="Dell">Dell</option>
+                            <option value="OKI">OKI</option>
+                            <option value="Panasonic">Panasonic</option>
+                            <option value="Sharp">Sharp</option>
+                            <option value="Konica Minolta">Konica Minolta</option>
+                            <option value="Other">Other Brand</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-needed">Service Needed *</label>
+                        <select id="service-needed" name="service-needed" required>
+                            <option value="">Select service</option>
+                            <option value="Printer Hardware Repair">Printer Hardware Repair</option>
+                            <option value="Software Installation">Software Installation</option>
+                            <option value="Firmware Upgrade">Firmware Upgrade</option>
+                            <option value="Printer Maintenance">Printer Maintenance</option>
+                            <option value="Printer Sales">Printer Sales / Supplies</option>
+                            <option value="Door-to-Door Service">Door-to-Door Service</option>
+                            <option value="Cartridge Refill">Cartridge Refill</option>
+                            <option value="Spare Parts">Spare Parts</option>
+                            <option value="Other">Other (describe below)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="issue">Describe Your Issue *</label>
+                        <textarea id="issue" name="message" placeholder="Tell us what's wrong — e.g. 0x97 error, paper jam, not printing, need software install, firmware upgrade, maintenance..." required></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="New Printer Repair Quote - PrinterCare Uganda">
+                    <input type="hidden" name="_replyto" id="replyTo" value="">
+                    <button type="submit" class="btn btn-gold btn-full"><i class="fas fa-paper-plane"></i> Send Quotation Request</button>
+                    <p style="text-align:center;margin-top:10px;font-size:0.72rem;opacity:0.65;">✅ We respond within 1 hour during business hours. Or call <strong>+256 702 747 217</strong> now.</p>
+                </form>
+                <div id="form-success" style="display:none; text-align:center; padding:20px; color:#10b981; font-weight:700; font-size:1.1rem;">
+                    ✅ Thank you! Your quotation request has been sent to PrinterCareUg@gmail.com. We'll respond within 1 hour. For urgent requests, call +256 702 747 217.
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section-dark" id="contact">
+    <section id="contact">
         <div class="container">
             <div class="section-header">
-                <div class="tag">Get In Touch</div>
-                <h2>Contact PrinterCare Uganda</h2>
-                <p>Ready to help. Call, WhatsApp, or visit our workshop.</p>
+                <div class="badge">Contact Us</div>
+                <h2>Get In Touch — PrinterCare Uganda</h2>
+                <p>Your trusted <strong>printer repair in Kampala</strong> & across Uganda. Call, WhatsApp, or visit us & more.</p>
             </div>
             <div class="contact-card">
-                <div class="contact-row">
-                    <i class="fas fa-map-pin"></i>
-                    <div>
-                        <strong>Address</strong>
-                        <span>E-Tower Building, Level 1 Room A05,<br>Kampala Road, Kampala, Uganda</span>
-                    </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div><strong>Workshop Address</strong><span>E-Tower Building, Level 1 Room A05, Kampala Road, Kampala, Uganda</span></div>
                 </div>
-                <div class="contact-row">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <strong>Phone / WhatsApp</strong>
-                        <span>+256 702 747 217</span>
-                    </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div><strong>Phone / WhatsApp</strong><span>+256 702 747 217</span></div>
                 </div>
-                <div class="contact-row">
+                <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <div>
-                        <strong>Email</strong>
-                        <span>PrinterCareUganda@gmail.com</span>
-                    </div>
+                    <div><strong>Email</strong><span>PrinterCareUg@gmail.com</span></div>
                 </div>
-                <div class="contact-row">
+                <div class="contact-item">
                     <i class="fas fa-clock"></i>
-                    <div>
-                        <strong>Working Hours</strong>
-                        <span>Mon–Sat: 8:00 AM – 6:00 PM | Sunday: Closed</span>
-                    </div>
+                    <div><strong>Working Hours</strong><span>Monday – Saturday: 8:00 AM – 6:00 PM | Sunday: Closed</span></div>
                 </div>
                 <div class="contact-buttons">
-                    <a href="tel:+256702747217" class="btn btn-orange"><i class="fas fa-phone"></i> Call Now</a>
+                    <a href="tel:+256702747217" class="btn btn-gold"><i class="fas fa-phone"></i> Call Now</a>
                     <a href="https://wa.me/256702747217" class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                    <a href="mailto:PrinterCareUganda@gmail.com" class="btn btn-outline"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="mailto:PrinterCareUg@gmail.com" class="btn btn-outline-dark"><i class="fas fa-envelope"></i> Email</a>
                 </div>
             </div>
         </div>
@@ -858,14 +984,16 @@
     <footer>
         <div class="container">
             <p>© 2026 <a href="#">PrinterCare Uganda</a>. All Rights Reserved.</p>
-            <p style="margin-top:2px;">Expert Printer Repair Specialists — Serving Kampala & Beyond Uganda.</p>
+            <p style="margin-top:3px;"><strong>Printer repair in Uganda</strong> — <strong>Kampala, Jinja, Entebbe, Mukono, Gulu, Mubende, Kasese, Wakiso, Mbale, Masaka, Lira, Mbarara, Fort Portal, Hoima</strong> & more others.</p>
+            <p style="margin-top:3px;font-size:0.66rem;opacity:0.5;">#1 Printer Repair Kampala | Epson Service Uganda | Printer Repair Near Me | Canon Printer Repair | HP Printer Service | Firmware Upgrade | Software Installation | Door-to-Door Printer Repair Uganda</p>
         </div>
     </footer>
 
     <!-- STICKY MOBILE CTA -->
     <div class="sticky-mobile-cta">
-        <a href="tel:+256702747217" class="btn btn-orange"><i class="fas fa-phone"></i> Call</a>
-        <a href="https://wa.me/256702747217" class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Chat</a>
+        <a href="tel:+256702747217" class="btn btn-gold"><i class="fas fa-phone"></i> Call</a>
+        <a href="https://wa.me/256702747217" class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="#quote" class="btn btn-outline-dark"><i class="fas fa-file-alt"></i> Quote</a>
     </div>
 
     <script>
@@ -876,12 +1004,29 @@
                 const target = document.querySelector(href);
                 if (target) {
                     e.preventDefault();
-                    const headerH = document.querySelector('header').offsetHeight;
-                    const pos = target.getBoundingClientRect().top + window.pageYOffset - headerH - 6;
+                    const hh = document.querySelector('header').offsetHeight;
+                    const pos = target.getBoundingClientRect().top + window.pageYOffset - hh - 8;
                     window.scrollTo({ top: pos, behavior: 'smooth' });
                 }
             });
         });
+
+        const emailInp = document.getElementById('email');
+        const replyTo = document.getElementById('replyTo');
+        if (emailInp && replyTo) {
+            emailInp.addEventListener('input', function() { replyTo.value = this.value; });
+        }
+
+        const form = document.getElementById('quoteForm');
+        const formSuccess = document.getElementById('form-success');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                setTimeout(() => {
+                    form.style.display = 'none';
+                    formSuccess.style.display = 'block';
+                }, 500);
+            });
+        }
     </script>
 </body>
 </html>
