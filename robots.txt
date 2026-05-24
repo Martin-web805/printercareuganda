@@ -1,0 +1,4 @@
+This websitUser-agent: *
+Allow: /
+Sitemap: http://printercareuganda.online/sitemap.xml
+e belongs to printercare Uganda
