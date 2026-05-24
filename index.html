@@ -199,6 +199,66 @@
         }
         .district-tag:hover { background: var(--accent-light); border-color: #fcd9b0; }
 
+        /* FAQ Section */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 16px;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            cursor: pointer;
+        }
+        .faq-item:hover {
+            border-color: #fcd9b0;
+            box-shadow: var(--shadow-md);
+        }
+        .faq-item .faq-question {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--deep-blue);
+            line-height: 1.35;
+        }
+        .faq-item .faq-question i {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-top: 2px;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+        .faq-item .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, margin-top 0.3s ease;
+            font-size: 0.8rem;
+            color: var(--gray);
+            line-height: 1.5;
+            margin-top: 0;
+            padding-left: 26px;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            margin-top: 10px;
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        .faq-item .faq-question .fa-chevron-down {
+            margin-left: auto;
+            font-size: 0.7rem;
+            color: var(--gray);
+        }
+
         /* Quote */
         .quote-section { background: linear-gradient(160deg, #0f1d35 0%, #0b1a2e 100%); color: #fff; padding: 48px 0; }
         .quote-section .section-header h2 { color: #fff; }
@@ -254,6 +314,7 @@
             .small-box span { font-size: 0.6rem; }
             .nav-links { display: none; }
             .services-grid { grid-template-columns: 1fr 1fr; }
+            .faq-grid { grid-template-columns: 1fr; }
             .form-row { grid-template-columns: 1fr; }
         }
         @media (max-width: 480px) {
@@ -265,6 +326,7 @@
             .services-grid { grid-template-columns: 1fr; }
             .errors-grid { grid-template-columns: 1fr 1fr; }
             .logo-grid { grid-template-columns: 1fr 1fr 1fr; }
+            .faq-grid { grid-template-columns: 1fr; }
             .sticky-mobile-cta { display: flex; }
             footer { margin-bottom: 56px; }
             .hero { padding: 24px 0 30px; }
@@ -285,6 +347,7 @@
                 <a href="#brands">Brands</a>
                 <a href="#districts">Districts</a>
                 <a href="#clients">Clients</a>
+                <a href="#faq">FAQ</a>
                 <a href="#quote">Quote</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -421,6 +484,119 @@
         </div>
     </section>
 
+    <!-- FAQ SECTION WITH TARGETED KEYWORDS -->
+    <section id="faq" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge"><i class="fas fa-question-circle"></i> Frequently Asked Questions</div>
+                <h2>Got Questions? We've Got Answers</h2>
+                <p>Common questions about <strong>printer repair in Uganda</strong>, on-site services, pricing, brands & more others.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Do you offer on-site printer repair services in Kampala?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We offer <strong>on-site printer repair services in Kampala, Central Region</strong>, specializing in HP, Canon, and Epson printers. Our technicians come to your office or home for fast, convenient <strong>printer repair near me</strong> service. We also provide door-to-door pickup & delivery across Kampala & more others.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Which printer brands do you repair in Uganda?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We provide <strong>printer repair services in Kampala, Uganda</strong> for all major brands including <strong>Epson, Canon, HP, Brother, Kyocera, Samsung, Xerox, Lexmark, Ricoh, Dell, OKI, Panasonic, Sharp, and Konica Minolta</strong>. Our <strong>Epson service Uganda</strong> and <strong>Canon printer repair Kampala</strong> are among our most requested services & more others.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>How quickly can I get printer repair near me in Kampala?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Most <strong>printer repairs in Kampala</strong> are completed <strong>same-day within 24 hours</strong>. We offer <strong>on-site printer repair in Kampala, Central Region</strong> for urgent business needs. Complex board-level repairs may take 48 hours. For <strong>printer repair near me</strong>, call or WhatsApp +256 702 747 217 & more others.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>How much does printer repair cost in Kampala, Uganda?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Pricing depends on the printer issue and brand. We provide <strong>honest, transparent quotes for printer repair in Uganda</strong> before any work begins. If repair costs more than replacement, we'll tell you upfront. <strong>Epson printer repair</strong>, <strong>Canon service</strong>, and <strong>HP printer repair in Kampala</strong> start at affordable rates. Request a free quote today & more others.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Do you provide printer repair services outside Kampala?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! We provide <strong>printer repair services across Uganda</strong> including Jinja, Entebbe, Mukono, Gulu, Mubende, Kasese, Wakiso, Mbale, Masaka, Lira, Mbarara, Fort Portal, Hoima, Arua, Soroti, Kabale, Tororo, Busia, Iganga & more others. Our <strong>door-to-door printer repair</strong> covers all Uganda districts.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Can you fix Epson 0x97 error and Canon P07/P08 errors?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We specialize in <strong>Epson 0x97 error fix in Kampala</strong>, <strong>Canon P07/P08 ink system repair</strong>, HP cartridge errors, paper jams, fuser issues, print head cleaning, waste ink reset, scanner errors & more. Our <strong>printer repair services in Kampala</strong> cover all common printer error codes & more others.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Do you offer printer maintenance and servicing in Uganda?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we provide comprehensive <strong>printer maintenance services in Kampala, Uganda</strong> including regular servicing, print head cleaning, firmware upgrades, and preventive maintenance for <strong>HP, Canon, Epson, Brother, and all major brands</strong>. Regular maintenance extends your printer's life & prevents costly breakdowns & more others.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Do you sell genuine printer spare parts and cartridges in Uganda?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We supply <strong>genuine printer spare parts in Kampala, Uganda</strong> including print heads, fusers, formatter boards, power supplies, and rollers. We also stock <strong>original HP cartridges, Canon ink, Epson CISS ink, Brother toner</strong>, and compatible alternatives. All parts come with warranty & more others.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Do you install Windows and Mac OS on computers in Kampala?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We provide <strong>Windows installation in Kampala</strong> (Windows 10, Windows 11) and <strong>Mac OS installation services in Uganda</strong> including macOS setup, reinstallation, upgrades, and software configuration. Complete driver setup and data backup included & more others.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>How do I request a quote for printer repair in Kampala?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Getting a <strong>printer repair quote in Kampala</strong> is easy! Fill out our <strong>online quotation form</strong> below, call <strong>+256 702 747 217</strong>, or WhatsApp us. We respond within 1 hour during business hours (Mon-Sat, 8AM-6PM). <strong>On-site printer repair services in Kampala</strong> available & more others.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="quote-section" id="quote">
         <div class="container">
             <div class="section-header">
@@ -499,6 +675,19 @@
                 }
             });
         });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.toggle('active');
+            });
+        });
+
         const emailInp = document.getElementById('email');
         const replyTo = document.getElementById('replyTo');
         if (emailInp && replyTo) {
